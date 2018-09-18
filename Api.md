@@ -7,6 +7,7 @@ URL: https://www.bitasiabit.com/app/v1/getIndexMarketCus
 Type: **GET**  
 请求参数: 无  
 回应参数:
+
 参数名称 | 数据类型 | 描述 | 备注
 --- | --- | --- | ---
 code | Integer | 回传状态代码 | 200: 成功<br> 300: 失败
@@ -31,6 +32,7 @@ URL: https://www.bitasiabit.com/app/v1/pairsCus
 Type: **GET**  
 请求参数: 无  
 回应参数:
+
 参数名称 | 数据类型 | 描述 | 备注
 --- | --- | --- | ---
 code | Integer | 回传状态代码 | 200: 成功<br> 300: 失败
@@ -49,11 +51,13 @@ Data 说明
 URL: https://www.bitasiabit.com/app/v1/getMarketCus  
 Type: **GET**  
 请求参数:  
+
 参数名称 | 数据类型 | 描述 | 是否必输入
 --- | --- | --- | ---
 pairname | String | 输入交易对代码 | 是
 
 回应参数:
+
 参数名称 | 数据类型 | 描述 | 备注
 --- | --- | --- | ---
 code | Integer | 回传状态代码 | 200: 成功<br> 300: 失败
@@ -78,11 +82,13 @@ Data 说明
 URL: https://www.bitasiabit.com/app/v1/getFullDepthCus  
 Type: **GET**  
 请求参数: 
+
 参数名称 | 数据类型 | 描述 | 是否必输入
 --- | --- | --- | ---
 pairname | String | 输入交易对代码 | 是
 
 回应参数:
+
 参数名称 | 数据类型 | 描述 | 备注
 --- | --- | --- | ---
 code | Integer | 回传状态代码 | 200: 成功<br> 300: 失败
@@ -102,6 +108,7 @@ URL: https://www.bitasiabit.com/app/v1/getDifficulty
 Type: **GET**  
 请求参数: 无  
 回应参数:
+
 参数名称 | 数据类型 | 描述 | 备注
 --- | --- | --- | ---
 code | Integer | 回传状态代码 | 200: 成功<br> 300: 失败
@@ -148,6 +155,7 @@ Data 说明
 URL: https://www.bitasiabit.com/app/v1/entrustSubmitCus  
 Type: **POST**  
 请求参数: 
+
 参数名称 | 数据类型 | 描述 | 是否必输入
 --- | --- | --- | ---
 apiKey | String | | 是
@@ -158,6 +166,7 @@ price | BigDecimal | 金额 | 是
 count | BigDecimal | 数量 | 是
 
 回应参数:
+
 参数名称 | 数据类型 | 描述 | 备注
 --- | --- | --- | ---
 code | Integer | 回传状态代码 | 200: 成功<br> 300: 失败
@@ -177,6 +186,7 @@ Data 说明
 URL: https://www.bitasiabit.com/app/v1/entrustSubmitIocCus  
 Type: **POST**  
 请求参数: 
+
 参数名称 | 数据类型 | 描述 | 是否必输入
 --- | --- | --- | ---
 apiKey | String | | 是
@@ -187,6 +197,7 @@ price | BigDecimal | 金额 | 是
 count | BigDecimal | 数量 | 是
 
 回应参数:
+
 参数名称 | 数据类型 | 描述 | 备注
 --- | --- | --- | ---
 code | Integer | 回传状态代码 | 200: 成功<br> 300: 失败
@@ -206,6 +217,7 @@ Data 说明
 URL: https://www.bitasiabit.com/app/v1/entrustMarketCus  
 Type: **POST**  
 请求参数: 
+
 参数名称 | 数据类型 | 描述 | 是否必输入
 --- | --- | --- | ---
 apiKey | String | | 是
@@ -216,6 +228,7 @@ price | BigDecimal | 金额 | 买方为必填栏位
 count | BigDecimal | 数量 | 卖方为必填栏位
 
 回应参数:
+
 参数名称 | 数据类型 | 描述 | 备注
 --- | --- | --- | ---
 code | Integer | 回传状态代码 | 200: 成功<br> 300: 失败
@@ -235,6 +248,7 @@ Data 说明
 URL: https://www.bitasiabit.com/app/v1/entrustBatchCancelCus  
 Type: **POST**  
 请求参数: 
+
 参数名称 | 数据类型 | 描述 | 是否必输入
 --- | --- | --- | ---
 apiKey | String | | 是
@@ -242,6 +256,7 @@ secretKey | String | | 是
 entrustIdList | String |委单ID ex:1,2,3 | 是
 
 回应参数:
+
 参数名称 | 数据类型 | 描述 | 备注
 --- | --- | --- | ---
 code | Integer | 回传状态代码 | 200: 成功<br> 300: 失败
@@ -252,6 +267,7 @@ time | timestamp | 时间戳记 |
 URL: https://www.bitasiabit.com/app/v1/userEntrustCus  
 Type: **POST**  
 请求参数: 
+
 参数名称 | 数据类型 | 描述 | 是否必输入
 --- | --- | --- | ---
 apiKey | String | | 是
@@ -260,6 +276,7 @@ entrustId | String | 委单 ID | 否
 pairname | String | 输入交易对代码 | 否
 
 回应参数:
+
 参数名称 | 数据类型 | 描述 | 备注
 --- | --- | --- | ---
 code | Integer | 回传状态代码 | 200: 成功<br> 300: 失败
@@ -291,6 +308,7 @@ Data 说明
 URL: https://www.bitasiabit.com/app/v1/userEntrustHistoryCus  
 Type: **POST**  
 请求参数: 
+
 参数名称 | 数据类型 | 描述 | 是否必输入
 --- | --- | --- | ---
 apiKey | String | | 是
@@ -300,6 +318,7 @@ pairname | String | 输入交易对代码 | 否
 currentPage | Integer | 指定跳页 | 否
 
 回应参数:
+
 参数名称 | 数据类型 | 描述 | 备注
 --- | --- | --- | ---
 code | Integer | 回传状态代码 | 200: 成功<br> 300: 失败
@@ -335,6 +354,7 @@ Data 说明
 URL: https://www.bitasiabit.com/app/v1/userEntrustSearchCus  
 Type: **POST**  
 请求参数: 
+
 参数名称 | 数据类型 | 描述 | 是否必输入
 --- | --- | --- | ---
 apiKey | String | | 是
@@ -342,6 +362,7 @@ secretKey | String | | 是
 entrustId | String | 委单 ID | 是
 
 回应参数:
+
 参数名称 | 数据类型 | 描述 | 备注
 --- | --- | --- | ---
 code | Integer | 回传状态代码 | 200: 成功<br> 300: 失败
@@ -374,12 +395,14 @@ Data 说明
 URL: https://www.bitasiabit.com/app/v1/userCapitalCus  
 Type: **POST**  
 请求参数: 
+
 参数名称 | 数据类型 | 描述 | 是否必输入
 --- | --- | --- | ---
 apiKey | String | | 是
 secretKey | String | | 是
 
 回应参数:
+
 参数名称 | 数据类型 | 描述 | 备注
 --- | --- | --- | ---
 code | Integer | 回传状态代码 | 200: 成功<br> 300: 失败
